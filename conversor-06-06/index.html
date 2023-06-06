@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Conversor</title>
+    <style>
+        body{
+            font-family: serif;
+            background: -webkit-linear-gradient(to left, rgb(7, 20, 133), rgb(31, 47, 189));
+            background: linear-gradient(to left, rgb(7, 20, 133), rgb(31, 47, 189));
+        }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #convert{
+            margin-top: 2%;
+            background-color: rgb(0, 47, 255);
+        }
+
+        #clear{
+            margin-top: 2%;
+            background-color: rgb(204, 31, 31);
+        }
+
+        #convert:hover{
+            background-color: deepskyblue;
+        }
+
+        h1{
+            font-family: sans-serif;
+            color: ghostwhite;
+        }
+
+        input{
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 2em;
+            color: lightsalmon;
+            font-family: cursive, sans-serif;
+        }
+
+        ::-webkit-input-placeholder{
+            color: #ccc;
+        }
+
+        ::-ms-input-placeholder{
+            color: #ccc;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Temperature Converter</h1>
+
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value="" />
+
+        <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" />
+
+        <button id="convert">Convert!</button>
+        <button id="clear">Reset</button>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+</html>
